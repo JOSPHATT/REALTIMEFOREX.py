@@ -13,6 +13,4 @@ jobs:
   test:
     name: my_ob
     runs-on: ubuntu-latest
-    
--name: my
 run:echo 'list'
