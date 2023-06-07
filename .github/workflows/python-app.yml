@@ -10,7 +10,11 @@ permissions:
   contents: read
 
 jobs:
-  test:
-    name: my_ob
+  bash-example:
     runs-on: ubuntu-latest
-run:echo 'list'
+    steps:
+      - name: Group of log lines
+        run: |
+            echo "::group::My title"
+            echo "Inside group"
+            echo "::endgroup::"
