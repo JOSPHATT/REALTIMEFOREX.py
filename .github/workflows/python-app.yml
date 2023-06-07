@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  
-
+  test:
+    name: my_ob
     runs-on: ubuntu-latest
 
     steps:
