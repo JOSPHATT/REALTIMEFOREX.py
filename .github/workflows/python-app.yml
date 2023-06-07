@@ -18,4 +18,4 @@ jobs:
             echo "::group::My title"
             echo "Inside group"
             echo "::endgroup::"
-            python realtimeforex.py
+            python REALTIMEFOREX.py/realtimeforex.py
