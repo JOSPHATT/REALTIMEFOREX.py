@@ -5,11 +5,12 @@ on:
     branches: [ main ] 
   workflow_dispatch:
 
-permissions: read
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: read
 
     steps:
       - name: Checkout repository content
