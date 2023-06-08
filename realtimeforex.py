@@ -35,7 +35,7 @@ for curr in currencies_data.keys():
 #print(fine_data)
 
 import csv                                            
-with open('/content/realtime_currencies.csv', 'a', newline='') as csvfile:
+with open('realtime_currencies.csv', 'a', newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',',
                             quotechar=',', quoting=csv.QUOTE_MINIMAL)                                           
     spamwriter.writerow([h for h in fine_data.values()])
