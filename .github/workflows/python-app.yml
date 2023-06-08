@@ -24,8 +24,8 @@ jobs:
 
       - name: Execute Python script # Run the run.py to get the latest data
         run: |
-          python realtimeforex.py >reatimeforex.txt
-          cat realtimeforex.txt
+          var=$(python realtimeforex.py)
+          echo $var
       - name: Push to github
         run: |
           git config user.name github-actions
