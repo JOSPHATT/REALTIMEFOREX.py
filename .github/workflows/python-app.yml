@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: read
+    permissions: write
 
     steps:
       - name: Checkout repository content
