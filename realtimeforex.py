@@ -32,10 +32,12 @@ for curr in currencies_data.keys():
     #print(curr)                                          
     prce=float(val['Realtime Currency Exchange Rate']['5. Exchange Rate'])
     fine_data[curr]=prce
-#print(fine_data)
+print(fine_data)
 
+"""
 import csv                                            
 with open('realtime_currencies.csv', 'a', newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',',
                             quotechar=',', quoting=csv.QUOTE_MINIMAL)                                           
     spamwriter.writerow([h for h in fine_data.values()])
+    """
