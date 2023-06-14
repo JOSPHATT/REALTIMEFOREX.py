@@ -1,0 +1,7 @@
+- name: File size
+  uses: alexrogalskiy/github-action-file-size@master
+  with:
+    reportName: 'realtimeforex.txt File report'
+    sourceFilePath: './data/african_proverbs.json'
+    targetFilePath: './data/african_proverbs_unique.json'
+    sizeUnit: 'kb'
