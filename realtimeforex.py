@@ -42,7 +42,7 @@ import time
 import json
 time_stamp=time.asctime()
 Final_data={}  
-Final_data[time_stamp]=finaldata
+Final_data[time_stamp]=final_data()
 filename = 'realtimeforex.json'
 entry = final_data()
 import os
