@@ -1,4 +1,4 @@
-import requests
+!import requests
 import re  
 import json
 pairs=[['AUD','JPY'],['AUD','NZD'],['AUD','USD'],['CAD','JPY'],['EUR','JPY'],['EUR','USD'],['GBP','JPY'],['USD','JPY']]
@@ -39,5 +39,5 @@ final_data()
 Finaldata=final_data()
 #print(type(Finaldata))
 
-with open("realtimeforex.json", "a") as outfile:
-    json.dump(Finaldata, outfile)
+
+
