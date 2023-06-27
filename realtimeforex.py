@@ -32,8 +32,9 @@ for curr in currencies_data.keys():
     #print(curr)                                          
     prce=float(val['Realtime Currency Exchange Rate']['5. Exchange Rate'])
     fine_data[curr]=prce
-print(fine_data)
-
+def final_data():
+    return fine_data
+final_data()
 """
 import csv                                            
 with open('realtime_currencies.csv', 'a', newline='') as csvfile:
