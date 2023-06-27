@@ -39,5 +39,5 @@ final_data()
 Finaldata=final_data()
 #print(type(Finaldata))
 
-with open("realtimeforex.json", "w") as outfile:
+with open("realtimeforex.json", "a") as outfile:
     json.dump(Finaldata, outfile)
