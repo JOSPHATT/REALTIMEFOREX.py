@@ -1,4 +1,4 @@
-import * from realtimeforex
+import realtimeforexex
 
-print(Finaldata)
+print(finaldata)
 print(time_stamp)
