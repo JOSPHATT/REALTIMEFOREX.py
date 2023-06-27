@@ -35,7 +35,7 @@ for curr in currencies_data.keys():
     fine_data[curr]=prce
 def final_data():
     return fine_data
-#final_data()
+print(final_data())
 finaldata=final_data()
 import time
 time_stamp=time.asctime()
