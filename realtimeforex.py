@@ -46,7 +46,7 @@ Final_data[time_stamp]=final_data()
 filename = 'realtimeforex.json'
 entry = final_data()
 import os
-if os.stat('forex.json').st_size == 0:
+if os.stat('realtimeforex.json').st_size == 0:
     with open(filename, "w") as file:
         json.dump(Final_data, file)
 else:
