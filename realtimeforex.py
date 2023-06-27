@@ -1,4 +1,4 @@
-!import requests
+import requests
 import re  
 import json
 pairs=[['AUD','JPY'],['AUD','NZD'],['AUD','USD'],['CAD','JPY'],['EUR','JPY'],['EUR','USD'],['GBP','JPY'],['USD','JPY']]
