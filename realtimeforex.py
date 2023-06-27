@@ -35,8 +35,25 @@ for curr in currencies_data.keys():
     fine_data[curr]=prce
 def final_data():
     return fine_data
-print(final_data())
-finaldata=final_data()
+#print(final_data())
+#finaldata=final_data()
 import time
+#time_stamp=time.asctime()
+import json
 time_stamp=time.asctime()
+Final_data={}  
+Final_data[time_stamp]=finaldata
+filename = 'realtimeforex.json'
+entry = final_data()
+import os
+if os.stat('forex.json').st_size == 0:
+    with open(filename, "w") as file:
+        json.dump(Final_data, file)
+else:
+    with open(filename, "r+") as file:
+        data = json.load(file)
+        data[time_stamp]=entry
+        file.seek(0)
+        json.dump(data, file)
+
 
