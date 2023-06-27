@@ -35,10 +35,8 @@ for curr in currencies_data.keys():
 def final_data():
     return fine_data
 final_data()
-"""
-import csv                                            
-with open('realtime_currencies.csv', 'a', newline='') as csvfile:
-    spamwriter = csv.writer(csvfile, delimiter=',',
-                            quotechar=',', quoting=csv.QUOTE_MINIMAL)                                           
-    spamwriter.writerow([h for h in fine_data.values()])
-    """
+Finaldata=final_data()
+#print(type(Finaldata))
+
+with open("realtimeforex.json", "w") as outfile:
+    json.dump(Finaldata, outfile)
