@@ -1,5 +1,6 @@
 import requests
-import re      
+import re  
+import json
 pairs=[['AUD','JPY'],['AUD','NZD'],['AUD','USD'],['CAD','JPY'],['EUR','JPY'],['EUR','USD'],['GBP','JPY'],['USD','JPY']]
 str_url='https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=TTNX3GCSG7Z5KVI3'
 def data_gen(url):
