@@ -20,23 +20,23 @@ tab1.line_chart(datagen()['AUDJPY'])
 tab2.subheader("AUDNZD")
 tab2.line_chart(datagen()['AUDNZD'])
 
-tab2.subheader("AUDUSD")
-tab2.line_chart(datagen()['AUDUSD'])
+tab3.subheader("AUDUSD")
+tab3.line_chart(datagen()['AUDUSD'])
 
-tab2.subheader("CADJPY")
-tab2.line_chart(datagen()['CADJPY'])
+tab4.subheader("CADJPY")
+tab4.line_chart(datagen()['CADJPY'])
 
-tab2.subheader("EURJPY")
-tab2.line_chart(datagen()['EURJPY'])
+tab5.subheader("EURJPY")
+tab5.line_chart(datagen()['EURJPY'])
 
-tab2.subheader("EURUSD")
-tab2.line_chart(datagen()['EURUSD'])
+tab6.subheader("EURUSD")
+tab6.line_chart(datagen()['EURUSD'])
 
-tab2.subheader("GBPJPY")
-tab2.line_chart(datagen()['GBPJPY'])
+tab7.subheader("GBPJPY")
+tab7.line_chart(datagen()['GBPJPY'])
 
-tab2.subheader("USDJPY")
-tab2.line_chart(datagen()['USDJPY'])
+tab8.subheader("USDJPY")
+tab8.line_chart(datagen()['USDJPY'])
 
 
 
