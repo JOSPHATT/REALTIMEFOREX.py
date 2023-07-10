@@ -3,8 +3,8 @@ import requests
 
 github_url="https://raw.githubusercontent.com/JOSPHATT/REALTIMEFOREX.py/main/realtimeforex.json"
 import json
-p = requests.get(github_url)
-github_jsonforex_dictionary=json.loads(p.text)
+with open('realtimeforex.json') as f:
+  github_jsonforex_dictionary = json.load(f)
 
 import pandas as pd
 from pandas import json_normalize
