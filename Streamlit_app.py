@@ -12,4 +12,5 @@ column_names=[i for i in github_jsonforex_dictionary.keys()]
 df = pd.DataFrame(github_jsonforex_dictionary.values())
 st.title('MY LIVE FOREX')
 st.header('AUDJPY')
-st.line_chart(df['AUDJPY'])
+AUDJPY_data=df['AUDJPY']
+st.line_chart(AUDJPY_data)
