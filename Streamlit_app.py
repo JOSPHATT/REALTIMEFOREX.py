@@ -11,5 +11,5 @@ def datagen():
   return pd.DataFrame(github_jsonforex_dictionary.values())
 
 st.title('MY LIVE FOREX')
-st.header('AUDJPY')
+pairs=[AUDJPY,AUDNZD,AUDUSD,CADJPY,EURJPY,EURUSD,GBPJPY,USDJPY]
 st.line_chart(datagen()['AUDJPY'])
