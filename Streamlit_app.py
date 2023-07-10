@@ -35,3 +35,7 @@ Timestamps=pd.DataFrame(Tyms)
 DF=df.T
 DF.columns=column_names
 DF=DF.rename_axis(['currency_pair']).reset_index()
+
+st.title('MY LIVE FOREX')
+st.header('AUDJPY')
+st.line_chart(df['AUDJPY'])
