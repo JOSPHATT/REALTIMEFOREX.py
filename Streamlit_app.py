@@ -10,7 +10,7 @@ import pandas as pd
 from pandas import json_normalize
 column_names=[i for i in github_jsonforex_dictionary.keys()]
 df = pd.DataFrame(github_jsonforex_dictionary.values())
-Timeseries=pd.DataFrame(github_jsonforex_dictionary.keys())
+"""Timeseries=pd.DataFrame(github_jsonforex_dictionary.keys())
 times=Timeseries.values.tolist()
 Tyms=[]
 for tym in times:
@@ -24,8 +24,7 @@ for tym in times:
 Timestamps=pd.DataFrame(Tyms)
 DF=df.T
 DF.columns=column_names
-DF=DF.rename_axis(['currency_pair']).reset_index()
-
+DF=DF.rename_axis(['currency_pair']).reset_index()"""
 st.title('MY LIVE FOREX')
 st.header('AUDJPY')
 st.line_chart(df['AUDJPY'])
