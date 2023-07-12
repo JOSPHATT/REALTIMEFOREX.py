@@ -23,7 +23,7 @@ tab2.line_chart(datagen()['AUDNZD'])
 tab3.subheader("AUDUSD")
 tab3.line_chart(datagen()['AUDUSD'])
 
-"""tab4.subheader("CADJPY")
+tab4.subheader("CADJPY")
 tab4.line_chart(datagen()['CADJPY'])
 
 tab5.subheader("EURJPY")
@@ -36,7 +36,7 @@ tab7.subheader("GBPJPY")
 tab7.line_chart(datagen()['GBPJPY'])
 
 tab8.subheader("USDJPY")
-tab8.line_chart(datagen()['USDJPY'])"""
+tab8.line_chart(datagen()['USDJPY'])
 
 
 
