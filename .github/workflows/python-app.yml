@@ -25,7 +25,7 @@ jobs:
           python-version: 3.11 # Install the python version needed
 
       - name: Install Python dependencies
-        run: python -m pip install --upgrade pip requests lxml 
+        run: python -m pip install --upgrade pip requests lxml pandas
 
       - name: Execute Python script # Run the run.py to get the latest data
         run: |
