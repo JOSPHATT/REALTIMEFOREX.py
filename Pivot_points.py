@@ -2,7 +2,6 @@ import requests
 import json
 from lxml import html
 import pandas as pd
-from matplotlib import pyplot as plt
 
 
 #SCRAPING PIVOT POINTS FROM DAILY FX
