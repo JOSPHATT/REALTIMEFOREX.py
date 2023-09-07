@@ -30,7 +30,7 @@ jobs:
       - name: Execute Python script # Run the run.py to get the latest data
         run: |
           python realtimeforex.py
-          python Pivotpoints.py
+          python Pivot_points.py
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
