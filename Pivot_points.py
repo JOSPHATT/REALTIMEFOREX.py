@@ -75,9 +75,26 @@ for ind in n_pivot_points_df.index:
 currency_pairs_data=n_pivot_points_df.T[currencies_pairs_name]
 n_currency_pairs_data=currency_pairs_data.dropna()
 n_currency_pairs_data=n_currency_pairs_data.T
-
-#print(n_pivot_points_df[col].index)
-
 for col in n_currency_pairs_data.columns:
   n_currency_pairs_data[col] = n_currency_pairs_data[col].astype(float)
-print(n_currency_pairs_data.dtypes)
+def final_data():
+  return currency_pairs_data
+import time
+#time_stamp=time.asctime()
+import json
+time_stamp=time.asctime()
+Final_data={}  
+Final_data[time_stamp]=final_data()
+filename = 'forexpivotpoints.json'
+entry = final_data()
+import os
+if os.stat(filename).st_size == 0:
+    with open(filename, "w") as file:
+        json.dump(Final_data, file)
+else:
+    with open(filename, "r+") as file:
+        data = json.load(file)
+        data[time_stamp]=entry
+        file.seek(0)
+        json.dump(data, file)
+
