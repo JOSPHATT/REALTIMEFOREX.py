@@ -15,7 +15,7 @@ pairs=["AUDJPY","AUDNZD","AUDUSD","CADJPY","EURJPY","EURUSD","GBPJPY","USDJPY"]
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([i for i in pairs])
 
 tab1.subheader("AUDJPY")
-tab1.line_chart(datagen()['AUDJPY'])
+tab1.line_chart(datagen()['AUDJPY'][0:100)
 
 tab2.subheader("AUDNZD")
 tab2.line_chart(datagen()['AUDNZD'])
