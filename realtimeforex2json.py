@@ -5,7 +5,8 @@ import json
 #finaldata=final_data()
 time_stamp=timerer()
 
-Final_data={}                                              Final_data[time_stamp]=finaldata
+Final_data={}                                              
+Final_data[time_stamp]=finaldata
 #print(Final_data)
 
 #Final_data_dictionary[time_stamp]
